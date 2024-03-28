@@ -73,18 +73,36 @@ $(document).ready(function() {
         }
     }
 
+    function adjustimgtent() {
+        if ($(window).width() < 768) { // Jika tampilan mobile
+            $(".img-tentang").css({
+                "margin-left": "auto",
+                "width" : "230px",
+                "height" : "290px"
+            });
+        } else { // Jika tampilan tidak mobile
+            $(".img-tentang").css({
+                "margin-left": "300px",
+                "width" : "320px",
+                "height" : "380px"
+            });
+        }
+    }
+
     // Initial check on page load
     checkPseudoElement();
     checkPadding();
     adjustImgT();
-    adjustpkata()
+    adjustpkata();
+    adjustimgtent();
 
     // Check on window resize
     $(window).resize(function() {
         checkPseudoElement();
         checkPadding();
         adjustImgT();
-        adjustpkata()
+        adjustpkata();
+        adjustimgtent();
     });
 
 });
