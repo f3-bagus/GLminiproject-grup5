@@ -2,10 +2,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 4;
   padding: 4;
-  background-color: rgba(228, 68, 10, 0.932);
 }
 
-.container {
+.container-outlet1 {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
@@ -26,29 +25,6 @@ body {
    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-h1 {
-  text-align: center;
-  color: #070707; /* Warna teks judul */
-}
-
-h5 {
-  text-align: center;
-  color: #f5e9dd; /* Warna teks subtitle */
-  margin-bottom: 10px; /* Jarak antara subtitle */
-}
-
-h6 {
-  text-align: center;
-  color: #070707; /* Warna teks deskripsi */
-}
-
-p {
-
-  color: black;
-  text-align: center;
-  margin-top: 25px;
-}
-
 .outlet {
   margin-bottom: 20px;
   border: 1px solid #0c0c0c;
@@ -62,13 +38,24 @@ p {
   
 }
 
-img{
-  width: 450px;
-  height: 200px;
-}
-
 .outlet-info {
   flex: 1;
+}
+
+.h1-outlet{
+  text-align: center;
+  color: #070707; /* Warna teks judul */
+}
+
+.h5-outlet{
+  text-align: center;
+  color: #f5e9dd; /* Warna teks subtitle */
+  margin-bottom: 10px; /* Jarak antara subtitle */
+}
+
+.h6-outlet{
+  text-align: center;
+  color: #070707; /* Warna teks deskripsi */
 }
 
 .outlet-info h2 {
@@ -78,6 +65,18 @@ img{
 .outlet-info p {
   margin-bottom: 10px;
 }
+
+.p-outlet{
+  color: black;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.img-outlet{
+  width: 450px;
+  height: 200px;
+}
+
 
 .outlet-info a {
   display: block;
@@ -97,4 +96,113 @@ img{
 .outlet-image img {
   width: 100%;
   height: 100%;
+}
+
+
+.container-order1{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 22px;
+  margin-top: 50px;
+}
+
+.container .grid-containerorder {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  column-gap: 25rem; /* Mengatur jarak antar card */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-left: 2rem;
+}
+
+
+
+.container .order {
+  display : grid;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+  }  
+  
+
+.order {
+  margin-bottom: 20px;
+  border: 1px solid #0c0c0c;
+  border-radius: 15px;
+  padding: 20px;
+  margin-right: 30px; /* Add this line */
+  text-align: center;
+  width: 300px; /* lebar kartu */
+  height: 300px; /* tinggi kartu */
+  background-color: #F8C99A;
+  
+}
+
+.order-info {
+  flex: 1;
+}
+
+.order-info img{
+  margin-bottom: -15px;
+}
+
+.img-order{
+  width: 250px;
+  height: 150px;
+  z-index: 10;
+  border-radius: 20px;
+}
+
+.order-p {
+  margin-bottom: 15px;
+  color: black;
+  text-align: center;
+  margin-top: 17px;
+}
+
+.order-info a:hover {
+  text-decoration: underline;
+}
+
+.order-image {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.order-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.h1-order{
+  border-radius: 20px;
+  text-align: center;
+  color: white; /* Warna teks judul */
+  background-color: rgba(228, 68, 10, 0.932);
+  padding: 10px 13px;
+  margin-bottom: 100px; /* Menambahkan jarak bawah */ 
+  width: 50%;
+  margin-inline: auto;
+ 
+}
+
+.card-title{
+  border-radius: 20px;
+  text-align: center;
+  color: #0e0d0d; /* Warna teks subtitle */
+  margin-bottom: 10px; /* Jarak antara subtitle */
+  padding: 5px; /* Menambahkan padding */
+  background-color:#E97D34; /* Memberikan warna latar belakang */
+  position: relative;
+  font-size: small;
+  width: 50%;
+  margin-inline: auto;
+  
+  
+}
+
+.section-outlet{
+  background-color: rgba(228, 68, 10, 0.932);
+}
+
+.section-order{
+  background-color: #F4F0E6;
 }
