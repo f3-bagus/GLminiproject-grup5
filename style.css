@@ -1,0 +1,26 @@
+body {
+    font-family: "Montserrat";
+
+}
+
+/*--Navbar Start--*/
+.bg-body-navbar {
+    background-color: #ED7D31;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: 500;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+@media(max-width: 991px) {
+    .sidebar {
+        background-color: rgba(237, 125, 49, 0.9);
+        backdrop-filter: blur(100px);
+    }
+}
+/*--Navbar END--*/
