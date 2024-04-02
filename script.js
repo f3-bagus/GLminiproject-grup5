@@ -47,19 +47,19 @@ $(document).ready(function() {
         }
     }
 
-    function adjustImgT() {
-        if ($(window).width() < 768) { // Jika tampilan mobile
-            $(".imgT").css({
-                "margin-left": "0",
-                "max-width": "300px"
-            });
-        } else { // Jika tampilan tidak mobile
-            $(".imgT").css({
-                "margin-left": "300px",
-                "max-width": "450px"
-            });
-        }
-    }
+    // function adjustImgT() {
+    //     if ($(window).width() < 768) { // Jika tampilan mobile
+    //         $(".imgT").css({
+    //             "margin-left": "0",
+    //             "max-width": "300px"
+    //         });
+    //     } else { // Jika tampilan tidak mobile
+    //         $(".imgT").css({
+    //             "margin-left": "300px",
+    //             "max-width": "450px"
+    //         });
+    //     }
+    // }
     
     function adjustpkata() {
         if ($(window).width() < 768) { // Jika tampilan mobile
@@ -82,27 +82,41 @@ $(document).ready(function() {
             });
         } else { // Jika tampilan tidak mobile
             $(".img-tentang").css({
-                "margin-left": "300px",
+                "margin-left": "70px",
                 "width" : "320px",
                 "height" : "380px"
             });
         }
     }
 
+    function adjustdeskrispiT() {
+        if ($(window).width() < 880) { // Jika tampilan mobile
+            $(".deskripsiT").css({
+                "margin-right": "0"
+            });
+        } else { // Jika tampilan tidak mobile
+            $(".deskripsiT").css({
+                "margin-right": "190px"
+            });
+        }
+    }
+
+
+
     // Initial check on page load
     checkPseudoElement();
     checkPadding();
-    adjustImgT();
     adjustpkata();
     adjustimgtent();
+    adjustdeskrispiT()
 
     // Check on window resize
     $(window).resize(function() {
         checkPseudoElement();
         checkPadding();
-        adjustImgT();
         adjustpkata();
         adjustimgtent();
+        adjustdeskrispiT()
     });
 
 });
