@@ -339,7 +339,9 @@
 
 .h1-outlet{
   text-align: center;
-  color: #070707; /* Warna teks judul */
+  color: white; /* Warna teks judul */
+  margin-top: 70px;
+  font-weight: bold;
 }
 
 .h5-outlet{
@@ -377,7 +379,7 @@
 }
 
 .section-outlet{
-  background-color: rgba(228, 68, 10, 0.932);
+  background-color: #ED7D31;
   font-family: Arial, sans-serif;
   margin: 4;
   padding: 4;
@@ -478,6 +480,8 @@
   margin-bottom: 100px;
   width: 50%;
   margin-inline: auto;
+  margin-top: 70px;
+  font-weight: bold;
 }
 
 .card-title-order {
@@ -494,7 +498,7 @@
 }
 
 .section-outlet{
-  background-color: rgba(228, 68, 10, 0.932);
+  background-color: #ED7D31;
   font-family: Arial, sans-serif;
   margin: 4;
   padding: 4;
