@@ -1,4 +1,336 @@
 
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*--Navbar Start--*/
+.bg-body-navbar {
+    background-color: #ED7D31;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #754220;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+@media(max-width: 991px) {
+    .sidebar {
+        background-color: rgba(237, 125, 49, 0.9);
+        backdrop-filter: blur(100px);
+    }
+}
+
+#txt {
+    z-index: 2;
+}
+
+#imgl {
+    z-index: 2;
+
+}
+
+#tentang {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+#beranda {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    width: auto;
+    align-items: center;
+    position: relative;
+    background-image: url('/assets/bg-food.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+#beranda::after {
+    content: '';
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .15);
+    z-index: 1;
+}
+
+#unggulanKami {
+    min-height: 100vh;
+    display: flex;
+    padding: 30px;
+    width: auto;
+    width: 100%;
+    background-color: #ED7D31;
+    padding: 125px 20px;
+}
+
+#katakata {
+    min-height: 100vh;
+    display: flex;
+    padding: 30px;
+    width: auto;
+    width: 100%;
+    position: relative;
+    background-image: url('/assets/bg-chicken.png');
+    padding: 50px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#katakata::after {
+    content: '';
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 1;
+}
+
+/* 
+.container-beranda {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+} */
+
+/* .container-tentang {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+} */
+
+.container-unggulan {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 125px;
+}
+
+
+.p1-beranda {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 0.7rem;
+    padding-left: 55px;
+    position: relative;
+    display: inline-block;
+}
+
+.p1-beranda.before::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 0px;
+    width: 52px;
+    height: 0.5px;
+    background-color: white;
+}
+
+.p1-beranda.after::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.p2-beranda {
+    color: #ffffff;
+    margin-top: auto;
+    font-size: 0.7rem;
+}
+
+.h1-beranda {
+    color: #ffffff;
+    max-width: 700px;
+    margin: 0;
+    font-size: 68px;
+    font-weight: 750;
+    letter-spacing: 8px;
+}
+
+
+.logo-beranda {
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+
+}
+
+@media (max-width: 768px) {
+
+
+    .container {
+        padding: 0;
+
+    }
+
+    .col-md-6 {
+        text-align: center;
+
+    }
+
+    .col-md-6.d-flex.justify-content-end.align-items-center {
+        justify-content: center !important;
+
+        margin-top: 20px;
+
+    }
+}
+
+.btnB {
+    font-weight: 600;
+    margin-top: 8px;
+    padding: 10px 20px;
+    z-index: 2;
+    background-color: #ED7D31;
+    color: #ffffff;
+    border-radius: 10px;
+    border-color: #ffffff00;
+}
+
+.deskripsiT {
+    max-width: auto;
+    margin-bottom: 30px;
+}
+
+.h2-tentang {
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.p1-tentang {
+    color: #ED7D31;
+    position: relative;
+    display: inline-block;
+    font-weight: 550;
+}
+
+.p1-tentang::after {
+    content: '';
+    position: absolute;
+    /* Mengatur panjang garis horizontal */
+    height: 1.5px;
+    background-color: #ED7D31;
+}
+
+@media (max-width: 767px) {
+    .p1-tentang::after {
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .p1-tentang::after {
+        bottom: 10px;
+        right: 25;
+        width: 25%;
+    }
+}
+
+.p2-tentang {
+    font-weight: 520;
+    text-align: justify;
+    max-width: 440px;
+    margin-bottom: 0;
+}
+
+.imgTe {
+    text-align: center;
+}
+
+.img-tentang {
+    width: auto;
+    height: 380px;
+    background-repeat: no-repeat;
+}
+
+
+.h2-unggulan {
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 55px;
+    margin: 0;
+}
+
+.p1-unggulan {
+    color: #ffffff;
+    text-align: center;
+}
+
+.card-unggulan1 {
+    margin-top: 140px;
+}
+
+.card-unggulan2 {
+    min-height: 25vh;
+    max-width: 550px;
+    border-radius: 30px;
+    box-shadow: 0 15px 1px rgba(0, 0, 0, 0.25);
+}
+
+.card-bodyU {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-titleU {
+    color: #4F4A45;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.isi-kata {
+    z-index: 2;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 180px;
+}
+
+.h1-katakata {
+    font-weight: normal;
+    font-size: 32px;
+}
+
+.p1-katakata {
+    font-weight: bold;
+    word-spacing: 5px;
+    letter-spacing: 4px;
+    margin-top: 120px;
+    font-size: 72px;
+    max-width: 980px;
+}
+
+/* Outlet&Order Start*/
 .container-outlet1 {
   max-width: 800px;
   margin: 0 auto;
@@ -53,11 +385,11 @@
 
 .card-outlet {
   margin-bottom: 20px;
-  border: 1px solid #0c0c0c;
   border-radius: 15px;
   padding: 20px;
   text-align: center;
   background-color: aliceblue;
+  height: 400px;
 }
 
 .section-order{
@@ -72,7 +404,7 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 22px;
-  margin-top: 50px;
+  
 }
 
 .container .grid-containerorder {
@@ -94,7 +426,6 @@
 
   .card-order {
     margin-bottom: 20px;
-    border: 1px solid #0c0c0c;
     border-radius: 15px;
     padding: 20px;
     text-align: center;
@@ -175,4 +506,3 @@
   margin: 4;
   padding: 4;
 }
-
