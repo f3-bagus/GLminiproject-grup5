@@ -10,9 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styles.css">
     <title>Geprek Bang Jho</title>
 </head>
@@ -46,22 +48,22 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#">Beranda</a>
+                            <a class="nav-link" href="#beranda">Beranda</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#">Tentang</a>
+                            <a class="nav-link" href="#tentang">Tentang</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#">Menu</a>
+                            <a class="nav-link" href="#menu">Menu</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#">Outlet</a>
+                            <a class="nav-link" href="#outlet">Outlet</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#">Order</a>
+                            <a class="nav-link" href="#order">Order</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#">Testimoni</a>
+                            <a class="nav-link" href="#info">Testimoni</a>
                         </li>
                     </ul>
                 </div>
@@ -70,7 +72,7 @@
     </nav>
     <!-- Navbar End-->
 
-    <!-- Beranda & Tentang Start-->
+    <!-- Beranda Start-->
     <section id="beranda">
         <div class="container mt-5">
             <div class="row">
@@ -78,7 +80,7 @@
                     <p class="p1-beranda mt-1">SEJAK 2016</p>
                     <h1 class="h1-beranda">AYAM GEPREK BANG JHO</h1>
                     <p class="p2-beranda">SOLUSI MAKAN KENYANG, TANPA ISI DOMPET KURANG</p>
-                    <button class="btnB">ORDER SEKARANG</button>
+                    <a href="#order"><button class="btnB">ORDER SEKARANG</button></a>
                 </div>
                 <div id="imgl" class="col-md-6 d-flex justify-content-end align-items-center">
                     <img class="logo-beranda img-fluid" src="assets/Logo.png" alt="logo">
@@ -88,6 +90,8 @@
         </div>
     </section>
 
+
+<!-- tentang Start-->
     <section id="tentang">
         <div class="container mt-5">
             <div class="row">
@@ -105,6 +109,7 @@
                     <img class="img-tentang img-fluid " src="assets/sekilas.png" alt="sekilas foto">
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -137,21 +142,150 @@
             </div>
         </div>
     </section>
-
     <section id="katakata">
         <div class="isi-kata">
             <h1 class="h1-katakata">SEPATAH KALIMAT DARI KAMI</h1>
             <blockquote class="blockquote">
                 <p class="mb-0 p1-katakata">"rasa kebahagian yang dapat dijangkau oleh semua orang !"</p>
             </blockquote>
+
         </div>
     </section>
-    <!-- Beranda & Tentang End-->
+<!-- Beranda End-->
+
+<!-- Menu Start-->
+<section id="menu">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-menu text-center">
+                    <div class="namapaket">Paket Hemat</div>
+                    <div class="paket" style="background-image: url(assets/pakethemat.png);"></div>
+                </div>
+                <div class="col-lg-5 col-menu text-center">
+                    <div class="namapaket">Paket Kentir</div>
+                    <div class="paket" style="background-image: url(assets/paketkentir.png);"></div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container-3">
+            <div class="dafarMenu">
+                <center class="judulmenu">Makanan</center>
+                <div class="kotakmenu">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card card-menu">
+                                <div>
+                                    <img src="assets/ayamgeprek.png" class="card-img-top img-card" alt="Ayam Geprek">
+                                    <h5 class="card-title">Ayam Geprek</h5>
+                                    <p class="card-description">Nasi hangat yang disajikan dengan ayam goreng tepung
+                                        yang
+                                        digeprek dengan sambal. Level kepedasan sesuai keinginan Anda. Segera coba dan
+                                        rasakan sensasi baru yang tak terlupakan! </p>
+                                    <div class="div-price">
+                                        <p class="card-price">Rp 11.000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-menu">
+                                <div>
+                                    <img src="assets/ayamgeprek.png" class="card-img-top img-card" alt="Ayam Crispy">
+                                    <h5 class="card-title">Ayam Crispy</h5>
+                                    <p class="card-description">Potongan ayam yang digoreng dengan tepung crispy yang lezat,
+                                        disajikan dengan nasi hangat dan dilengkapi dengan saus pilihan. Segera nikmati
+                                        hidangan istimewa ini hanya di sini!</p>
+                                    <div class="div-price">
+                                        <p class="card-price">Rp 9.000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-menu">
+                                <div>
+                                    <img src="assets/ayamgeprek.png" class="card-img-top img-card" alt="Ayam Lumer">
+                                    <h5 class="card-title">Ayam Lumer</h5>
+                                    <p class="card-description">Nasi hangat yang disajikan dengan potongan ayam lembut dan
+                                        lezat yang dilengkapi dengan bumbu spesial yang membuatnya semakin menggugah selera.
+                                        </p>
+                                    <div class="div-price">
+                                        <p class="card-price">Rp 15.000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="dafarMenu">
+            <center class="judulmenu">Minuman</center>
+            <div class="kotakmenu">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card card-menu">
+                            <div>
+                                <img src="assets/tehpanas.png" class="card-img-top img-card" alt="Es Teh Jumbo">
+                                <h5 class="card-title">Es Teh Jumbo</h5>
+                                <p class="card-description">Kesegaran es teh dalam ukuran jumbo yang
+                                    memuaskan dahaga
+                                    Anda. Disajikan dengan es batu yang melimpah dan cita rasa teh yang
+                                    khas. Rasakan
+                                    kenikmatannya!</p>
+                                <div class="div-price">
+                                    <p class="card-price">Rp 3.500</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-menu">
+                            <div>
+                                <img src="assets/tehpanas.png" class="card-img-top img-card" alt="Teh (Es/Panas)">
+                                <h5 class="card-title">Teh (Es/Panas)</h5>
+                                <p class="card-description">Minuman teh yang dapat disajikan dalam
+                                    keadaan
+                                    hangat maupun
+                                    dingin sesuai keinginan Anda. Anda juga dapat memilih ingin teh
+                                    tawar
+                                    atau manis.
+                                    </p>
+                                <div class="div-price">
+                                    <p class="card-price">Rp 3.000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-menu">
+                            <div>
+                                <img src="assets/tehpanas.png" class="card-img-top img-card" alt="Jeruk(Es/Panas)">
+                                <h5 class="card-title">Jeruk (Es/Panas)</h5>
+                                <p class="card-description">Minuman jeruk yang diperoleh dari perasan
+                                    alami
+                                    buah jeruk
+                                    yang segar. Minuman ini dapat disajikan dalam keadaan hangat maupun
+                                    dingin. Rasakan di sini!</p>
+                                <div class="div-price">
+                                    <p class="card-price">Rp 4.500</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Menu End-->
 
     <!-- Outlet dan Order Start-->
+    <section id="outlet">
     <div class="section-outlet">
         <div class="container container-outlet1">
-          <section id="outlet">
+          
             <h1 class="h1-outlet">Temukan Outlet Kami</h1>
             <h5 class="h5-outlet">DI LINGKUNGAN SEKITARMU.</h5><br>
             <h5 class="h5-outlet">--------</h5><br>
@@ -162,7 +296,7 @@
             <div class="row row-cols-1 row-cols-md-2 g-4">
               <div class="col">
                 <div class="card-outlet">
-                  <img src="Assets/geprek1.jpg" class="card-img-top img-fluid" alt="Outlet 1">
+                  <img src="assets/geprek1.jpg" class="card-img-top img-fluid" alt="Outlet 1">
                   <div class="card-body">
                     <p class="card-text">Jalan Taman Siswa No. 88 C & D, Sekaran, Kec. Gn. Pati, Kota Semarang, Jawa Tengah 50229</p>
                     <a href="https://maps.app.goo.gl/BJCAi59RhEY82i8M8" class="btn btn-primary" target="_blank">Lihat Peta</a>
@@ -171,7 +305,7 @@
               </div>
               <div class="col">
                 <div class="card-outlet">
-                  <img src="Assets/geprek2.jpg" class="card-img-top img-fluid" alt="Outlet 2">
+                  <img src="assets/geprek2.jpg" class="card-img-top img-fluid" alt="Outlet 2">
                   <div class="card-body">
                     <p class="card-text">Gg. Rukun II No.33B, Sumurboto, Kec. Banyumanik, Kota Semarang, Jawa Tengah 50269</p>
                     <a href="https://maps.app.goo.gl/ubV3ToAyL8AzSKUm7" class="btn btn-primary" target="_blank">Lihat Peta</a>
@@ -180,7 +314,7 @@
               </div>
               <div class="col">
                 <div class="card-outlet">
-                  <img src="Assets/geprek3.jpg" class="card-img-top img-fluid" alt="Outlet 3">
+                  <img src="assets/geprek3.jpg" class="card-img-top img-fluid" alt="Outlet 3">
                   <div class="card-body">
                     <p class="card-text">Jalan Wolter Monginsidi, Jl. Gedongsongo No.5, Siroto, Pedurungan Tengah, Kec. Ungaran Bar., Brat, Jawa Tengah 50192</p>
                     <a href="https://maps.app.goo.gl/uNFnLewAD43guZkq9" class="btn btn-primary" target="_blank">Lihat Peta</a>
@@ -189,7 +323,7 @@
               </div>
               <div class="col">
                 <div class="card-outlet">
-                  <img src="Assets/geprek4.jpg" class="card-img-top img-fluid" alt="Outlet 4">
+                  <img src="assets/geprek4.jpg" class="card-img-top img-fluid" alt="Outlet 4">
       
                   <div class="card-body">
                     <p class="card-text">Jl. Kedungmundu No.17 F, Sambiroto, Kec. Tembalang, Kota Semarang, Jawa Tengah 50273</p>
@@ -198,18 +332,20 @@
                 </div>
               </div>
             </div>
-          </section>
+          
         </div>
       </div>
-      
+    </section>
+    
+    <section id="order">
       <div class="section-order">
         <div class="container container-order1">
-          <section id="order">
+          
             <h1 class="h1-order">Order Kami Sekarang</h1>
             <div class="row row-cols-1 row-cols-md-2 g-4">
               <div class="col">
                 <div class="card-order">
-                  <img src="Assets/GF.jpg" class="card-img-top2 img-fluid" alt="Order GOFood">
+                  <img src="assets/GF.jpg" class="card-img-top2 img-fluid" alt="Order GOFood">
                   <div class="card-body">
                     <h5 class="card-title-order">Order Via GoFood</h5>
                     <p class="card-text">Cabang Jl.GedongSongo 5, Ungaran Barat, Semarang</p>
@@ -218,7 +354,7 @@
               </div>
               <div class="col">
                 <div class="card-order">
-                  <img src="Assets/waa.jpg" class="card-img-top2 img-fluid" alt="Order WA">
+                  <img src="assets/waa.jpg" class="card-img-top2 img-fluid" alt="Order WA">
                   <div class="card-body">
                     <h5 class="card-title-order">Order Via WA</h5>
                     <p class="card-text">Melayani Semua Cabang</p>
@@ -226,10 +362,175 @@
                 </div>
               </div>
             </div>
-          </section>
         </div>
       </div>
-      <!-- Outlet dan Order End-->
+    </section>
+<!-- Outlet dan Order End-->
+
+<!-- Testimoni -->
+
+<section id="info" class="info">
+    <div class="container-testi">
+      <div class="row justify-content-center">
+          <h3 class="judul-testi">Testimoni</h3>
+          <hr style="width: 20cm; border-width: 5px; border-radius: 4px; color: #ED7D31">
+        <div class="col-md-8 col-lg-6 text-cgenter">
+          <h2 class="h2-testi">Apa Kata Mereka?</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="card-carousel owl-carousel owl-theme">
+            <div class="item">
+              <div class="card">
+                <img src="assets/ayamgeprek.png" class="card-img-top" alt="Card image cap">
+                <div class="card-body">
+                  <label> <strong>Paket Hemat</strong></label>
+                  <p class="card-text">
+                    “Ayamnya gede2, sambalnya nampol, nasi ambil sepuasnya. Harga
+                    minimal, kenyang maksimal.”
+                  </p>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="profile">
+
+                  </div>
+                  <div class="profile-desc">
+                    <span>Rania Putri</span>
+                    <br>Apoteker</br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="assets/WhatsApp Image 2024-03-19 at 11.08.35 (2).jpeg" class="card-img-top" alt="Card image cap">
+                <div class="card-body">
+                  <label> <strong>Paket Kentir</strong></label>
+                  <p class="card-text">“Puas kalau makan di geprek bang jho, jaminan kenyang es teh juga
+                    jumbo harga gk bikin kantong bolong.”</p>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="profile">
+                  </div>
+                  <div class="profile-desc">
+                    <span>Azizah Zafira</span>
+                    <br>Mahasiswa</br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="assets/WhatsApp Image 2024-03-19 at 11.08.34 (1).jpeg" class="card-img-top" alt="Card image cap">
+                <div class="card-body">
+                  <label> <strong>Paket Ayam</strong></label>
+                  <p class="card-text">"Bisa pilih mau pakai cabe berapapun sesuai selera. Cukup 10rb bisa
+                    dapat ayam geprek. Lalapan + nasi ambil sepuasnya."</p>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="profile">
+                  </div>
+                  <div class="profile-desc">
+                    <span>Rania Putri</span><br>Apoteker</br>
+               
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="assets/IMG_20220709_173516.jpg" class="card-img-top" alt="Card image cap">
+                <div class="card-body">
+                  <label> <strong>Paket Kentir</strong></label>
+                  <p class="card-text">"Definisi makan sepuasnya sih, nasi ambil sendiri, ayam gepreknya
+                    gak pelit, cabenya boleh request dan yg paling mantep adalah ES
+                    TEH NYA JUMBO!!</p>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="profile">
+                    
+                  </div>
+                  <div class="profile-desc">
+                    <span>Rania Putri<br>Apoteker</br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>  
+  
+  <!-- Formulir -->
+  <section id="formulir" class="formulir">
+    <h2 class="h2-form">Formulir Testimoni</h2>
+    <div class="container-form">
+      <form action="#" method="POST" id="testimonyForm">
+        <div class="form-group">
+          <label for="nama-lengkap">Nama Lengkap<strong style="color: red;">*</strong></label>
+          <div class="nama-input">
+            <input type="text" id="firstName" name="firstName" placeholder="Nama Depan">
+            <input type="text" id="lastName" name="lastName" placeholder="Nama Belakang">
+          </div>            
+        </div>
+        <div class="form-group">
+          <label for="pekerjaan">Pekerjaan <strong style="color: red;">*</strong></label>
+          <input type="text" id="pekerjaan" name="pekerjaan" required>
+        </div>
+        <div class="form-group">
+          <label for="testimonial">Testimoni Anda <strong style="color: red;">*</strong></label>
+          <textarea id="testimonial" name="testimonial" placeholder="Ketik disini" required></textarea>
+        </div>
+        <div class="form-group input-rating">
+          <label class="label-form" for="rating">Penilaian layanan kami<strong style="color: red;">*</strong></label>
+          <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5" required><label for="star5"></label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="image">Gambar (opsional)</label>
+          <div class="file-input">
+            <input type="file" id="gambar" name="gambar" accept="image/jpeg, image/png">
+            <label for="gambar" class="upload-btn-img">
+              <i class="fas fa-arrow-up-from-bracket" aria-hidden="true"></i>
+              Unggah
+            </label>
+          </div>
+        </div>
+        <button class="button-form" type="submit">Kirim</button>
+        </div>
+      </form>
+     </div>
+  </section>
+  <!-- Testi End-->
+
 
     <!-- Footer Start-->
     <footer class="bg-dark text-white pt-5 pb-4">
@@ -331,7 +632,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="script.js"></script>
+    
+    
 </body>
 
 </html>
